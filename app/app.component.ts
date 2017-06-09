@@ -22,7 +22,7 @@ export class AppComponent {
   selectedAnimal = null;
 
   animals: Animal[] = [
-    new Animal('Kevin', 'Penguin', 4, 'Carnivore', 'Arctic Exhibit', 3, 'Female', 'Slippery slides', 'Kids that knock on the glass enclosure'),
+    new Animal('Kevin', 'Penguin', 1, 'Carnivore', 'Arctic Exhibit', 3, 'Female', 'Slippery slides', 'Kids that knock on the glass enclosure'),
     new Animal('Bob', 'Giraffe', 6, 'Herbivore', 'Safari Exhibit', 6, 'Male', 'Tall trees', 'Visitors that take pictures with their iPad')
   ];
 
@@ -30,5 +30,5 @@ export class AppComponent {
     this.animals.push(animal);
   }
 
-  
+
 }
