@@ -8,8 +8,8 @@
 
 ### Further Exploration
 - [ ] Custom SASS styling
-- [ ] Add date-admitted property (timestamp) to Animal objects
-- [ ] Color-code by exhibit (property-binding)
+- [x] Add date-admitted property (timestamp) to Animal objects
+- [x] Color-code by exhibit (property-binding)
 - [ ] Filter by diet (pipe)
 - [ ] Add component to calculate average age for each species
 - [ ] Component to display the total number of caretakers needed for a specified species

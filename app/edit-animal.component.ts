@@ -7,11 +7,11 @@ import { Animal } from './animal.model';
   <div *ngIf='animalToEdit'>
     <h3>Update information for {{animalToEdit.name}} the {{animalToEdit.species}}:</h3>
     <label>Name:</label>
-    <input [(ngModel)]="animalToEdit.name">
+    <input [(ngModel)]="animalToEdit.name"><br>
     <label>Age:</label>
-    <input [(ngModel)]="animalToEdit.age">
+    <input [(ngModel)]="animalToEdit.age"><br>
     <label>Caretakers:</label>
-    <input [(ngModel)]="animalToEdit.caretakers">
+    <input [(ngModel)]="animalToEdit.caretakers"><br>
     <button class='btn btn-primary' (click)='finishedEditingButton()'>Save Changes</button>
   </div>
   `

@@ -8,23 +8,27 @@ import { Animal } from './animal.model';
   <div *ngIf='newAnimalForm'>
     <h3>Add a New Animal</h3>
     <label>Name:</label>
-    <input #newName>
+    <input #newName><br>
     <label>Species:</label>
-    <input #newSpecies>
+    <input #newSpecies><br>
     <label>Age:</label>
-    <input #newAge>
+    <input #newAge><br>
     <label>Diet:</label>
-    <input #newDiet>
-    <label>Location:</label>
-    <input #newLocation>
-    <label>Number of Caretakers:</label>
-    <input #newCaretakers>
+    <input #newDiet><br>
+    <label># of Caretakers:</label>
+    <input #newCaretakers><br>
     <label>Sex:</label>
-    <input #newSex>
+    <input #newSex><br>
     <label>Likes:</label>
-    <input #newLikes>
+    <input #newLikes><br>
     <label>Dislikes:</label>
-    <input #newDislikes>
+    <input #newDislikes><br>
+    <label>Location:</label>
+    <select #newLocation>
+      <option>Arctic Exhibit</option>
+      <option>Safari Exhibit</option>
+      <option>Rainforest Exhibit</option>
+    </select><br>
     <button class='btn btn-success' (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newName.value=''; newSpecies.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
   </div>
   <hr>

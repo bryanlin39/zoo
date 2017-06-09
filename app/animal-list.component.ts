@@ -4,15 +4,27 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
-  <select (change)='onChange($event.target.value)'>
-    <option value='allAnimals'>All Animals</option>
-    <option value='youngAnimals'>2 Years Old or Younger</option>
-    <option value='oldAnimals'>Older Than 2 Years Old</option>
-  </select>
+  <div class='row'>
+    <div class='col-md-6'>
+      <h4>Filters:</h4>
+      <select (change)='onChange($event.target.value)'>
+        <option value='allAnimals'>All Animals</option>
+        <option value='youngAnimals'>2 Years Old or Younger</option>
+        <option value='oldAnimals'>Older Than 2 Years Old</option>
+      </select>
+    </div>
+
+    <div class='col-md-6'>
+      <h4>Exhibit Coding:</h4>
+      <p id='arcticCode'>Arctic Exhibit</p>
+      <p id='safariCode'>Safari Exhibit</p>
+      <p id='rainforestCode'>Rainforest Exhibit</p>
+    </div>
+  </div>
 
   <h3>Current Residents</h3>
   <ul>
-    <li *ngFor="let animal of animalList | age:filterByAge">
+    <li *ngFor="let animal of animalList | age:filterByAge" [class]='locationColor(animal)'>
       {{animal.name}}
       <button class='btn btn-primary btn-sm' id='editAnimalButton' (click)='editAnimalButton(animal)'>Edit</button>
       <ul>
@@ -44,5 +56,15 @@ export class AnimalListComponent {
 
   onChange(optionFromMenu) {
     this.filterByAge = optionFromMenu;
+  }
+
+  locationColor(animal) {
+    if (animal.location === 'Arctic Exhibit') {
+      return 'arctic';
+    } else if (animal.location === 'Safari Exhibit') {
+      return 'safari';
+    } else {
+      return 'rainforest';
+    }
   }
 }
