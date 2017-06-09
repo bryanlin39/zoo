@@ -8,10 +8,11 @@ import { Animal } from './animal.model';
     <h1>Bryan's Zoo</h1>
     <div class='row'>
       <div class='col-md-6'>
-        <animal-list [animalList]='animals'></animal-list>
+        <animal-list [animalList]='animals' (editAnimalSender)='editAnimal($event)'></animal-list>
       </div>
       <div class='col-md-6'>
         <new-animal (newAnimalSender)='addNewAnimal($event)'></new-animal>
+        <edit-animal [animalToEdit]='selectedAnimal' (finishedEditingSender)='finishedEditing()'></edit-animal>
       </div>
     </div><!--row-->
   </div><!--container-->
@@ -30,5 +31,12 @@ export class AppComponent {
     this.animals.push(animal);
   }
 
+  editAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
+  }
+
+  finishedEditing() {
+    this.selectedAnimal = null;
+  }
 
 }
