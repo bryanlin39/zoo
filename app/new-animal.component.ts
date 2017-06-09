@@ -41,7 +41,9 @@ export class NewAnimalComponent {
   }
 
   submitForm(name: string, species: string, age: number, diet: string, location: string, caretakers: number, sex: string, likes: string, dislikes: string) {
-    var newAnimalToAdd: Animal = new Animal(name, species, age, diet, location, caretakers, sex, likes, dislikes);
+    var date = new Date();
+    var dateAdmitted = date.toDateString();
+    var newAnimalToAdd: Animal = new Animal(name, species, age, diet, location, caretakers, sex, likes, dislikes, dateAdmitted);
     this.newAnimalSender.emit(newAnimalToAdd);
     this.newAnimalForm = false;
   }

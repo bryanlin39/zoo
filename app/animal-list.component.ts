@@ -24,6 +24,7 @@ import { Animal } from './animal.model';
         <li><b>Sex:</b> {{animal.sex}}</li>
         <li><b>Likes:</b> {{animal.likes}}</li>
         <li><b>Dislikes:</b> {{animal.dislikes}}</li>
+        <li><b>Date Admitted:</b> {{animal.date}}</li>
       </ul>
       <br>
     </li>
