@@ -1,0 +1,20 @@
+{
+  "name": "zoo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Bryan Lin <bryanlin39@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bryanlin39/zoo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
