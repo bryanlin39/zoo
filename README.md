@@ -6,7 +6,7 @@
 
 ## Description
 
-Zoo Animal Tracker is a web application for tracking the animals in a zoo. Users can add new animals, edit existing animal entries, and organize animals by filters. The application is built with JavaScript and Angular 2. Access the webpage directly from https://bryanlin39.github.io/zoo.
+Zoo Animal Tracker is a web application for tracking the animals in a zoo. Users can add new animals, edit existing animal entries, and organize animals by filters. The application is built with JavaScript and Angular 2.
 
 ## Setup/Installation Requirements
 
