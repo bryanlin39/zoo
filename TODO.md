@@ -3,7 +3,7 @@
 ### Core Functionality
 - [x] List all animals
 - [x] Add a new animal
-- [ ] Edit an animal's name, age or caretakers
+- [x] Edit an animal's name, age or caretakers
 - [ ] Filter by animal age (all, younger than 2, older than 2)
 
 ### Further Exploration
