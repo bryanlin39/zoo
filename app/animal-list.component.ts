@@ -16,9 +16,9 @@ import { Animal } from './animal.model';
 
     <div class='col-md-6'>
       <h4>Exhibit Coding:</h4>
-      <p id='arcticCode'>Arctic Exhibit</p>
-      <p id='safariCode'>Safari Exhibit</p>
-      <p id='rainforestCode'>Rainforest Exhibit</p>
+      <p class='bg-info'>Arctic Exhibit</p>
+      <p class='bg-warning'>Safari Exhibit</p>
+      <p class='bg-success'>Rainforest Exhibit</p>
     </div>
   </div>
 
@@ -60,11 +60,11 @@ export class AnimalListComponent {
 
   locationColor(animal) {
     if (animal.location === 'Arctic Exhibit') {
-      return 'arctic';
+      return 'bg-info';
     } else if (animal.location === 'Safari Exhibit') {
-      return 'safari';
+      return 'bg-warning';
     } else {
-      return 'rainforest';
+      return 'bg-success';
     }
   }
 }
